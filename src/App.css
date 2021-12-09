@@ -2,37 +2,30 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.coinLogos {
+  width: 6rem;
+  padding-bottom: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 1rem;
+  font-size: 5rem;
+  text-shadow: black 1px 1px;
+  color: burlywood;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  margin: .1rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coinContainer {
+  border: 1px solid grey;
+  border-radius: 5em;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  background-color:papayawhip
 }
