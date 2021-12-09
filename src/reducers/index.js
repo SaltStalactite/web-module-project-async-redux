@@ -1,7 +1,7 @@
 import { FETCH_ERROR, FETCH_START, FETCH_SUCCESS } from "../actions";
 
 const initialState = {
-    coins: ''
+    coins: []
 }
 
 export const reducer = (state = initialState, action) => {

@@ -5,7 +5,6 @@ import CoinList from './components/CoinsList';
 function App() {
   return (
     <div className="App">
-      Async Redux Project
       <CoinList />
     </div>
   );

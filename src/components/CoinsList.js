@@ -1,22 +1,29 @@
 import React, { useEffect } from 'react';
 import { getAssets } from '../actions';
 import { connect } from 'react-redux';
+import Coin from './Coin';
 
-const CoinList = ({ dispatch }) => {
+const CoinList = (props) => {
+    // const { dispatch } = props
+    console.log(props.coins)
     useEffect(() => {
-        dispatch(getAssets());
+        props.dispatch(getAssets());
+        console.log(props.coins)
     }, []);
 
     return (
         <>
-            <h2>Coins</h2>
+            <h1>Coin Database</h1>
+            {props.coins.map(coin => {
+                return <Coin coin={coin} key={coin.id} />
+            })}
         </>
     )
 }
 
 const mapStateToProps = state => {
     return {
-        state
+        coins: state.coins
     }
 }
 
